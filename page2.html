@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>About Me</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+*{margin:0;padding:0;box-sizing:border-box;font-family:"Segoe UI",Arial,sans-serif}
+
+body{
+  min-height:100vh;
+  background:linear-gradient(135deg,#141e30,#243b55);
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  color:white;
+}
+
+.box{
+  background:rgba(0,0,0,.5);
+  padding:40px;
+  border-radius:22px;
+  max-width:420px;
+  text-align:center;
+  box-shadow:0 25px 60px rgba(0,0,0,.6);
+  animation:fadeIn 1.4s ease;
+}
+
+h1{font-size:28px;margin-bottom:15px}
+p{line-height:1.6;opacity:.9}
+
+/* PROFILE PHOTO */
+.profile-pic{
+  width:120px;
+  height:120px;
+  border-radius:50%;
+  object-fit:cover;
+  margin:15px auto 20px;
+  display:block;
+  border:3px solid #5fd3ff;
+  box-shadow:0 0 20px rgba(95,211,255,.6);
+}
+
+button{
+  margin:20px 8px 0;
+  padding:12px 24px;
+  font-size:16px;
+  border:none;
+  border-radius:14px;
+  background:#1aa3ff;
+  color:white;
+  cursor:pointer;
+}
+
+@keyframes fadeIn{
+  from{opacity:0;transform:scale(.95)}
+  to{opacity:1;transform:scale(1)}
+}
+</style>
+</head>
+
+<body>
+<div class="box">
+  <h1>About Me</h1>
+
+  <!-- YOUR PHOTO -->
+  <img src="me.jpg" alt="Photo of Abdul Rafay" class="profile-pic">
+
+  <p>
+    My name is Abdul Rafay. I am learning web development and technology
+    to understand how modern digital systems work and how ideas can be
+    transformed into real projects.
+  </p>
+
+  <p>
+    This website is part of my learning journey and represents my interest
+    in creativity, design, and problem solving.
+  </p>
+
+  <a href="page3.html"><button>My Goals</button></a>
+  <a href="index.html"><button>Back</button></a>
+</div>
+</body>
+</html>
